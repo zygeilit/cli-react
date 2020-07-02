@@ -1,0 +1,29 @@
+# base
+node_modules
+package-lock.json
+
+# tests
+test
+coverage
+
+# build tools
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+
+# linters
+.jscsrc
+.jshintrc
+.eslintrc*
+
+.babelrc
+gulpfile.js
+
+# editor settings
+.idea
+.editorconfig
+
+src
+test
+.travis.yml
+gulpfile.js

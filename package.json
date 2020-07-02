@@ -1,0 +1,52 @@
+{
+  "name": "@lanniao/cli",
+  "version": "1.0.0",
+  "description": "cli",
+  "scripts": {
+    "test": "mocha ./tests/index.js",
+    "watch": "gulp watch",
+    "cover": "istanbul cover --report lcov _mocha -- -R spec ./tests/*.js",
+    "mock": "node ./tests/mock-server.js"
+  },
+  "bin": {
+    "ln": "./bin/index.js"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "nodejs",
+    "cli",
+    "component",
+    "react"
+  ],
+  "license": "ISC",
+  "engines": {
+    "node": ">=8"
+  },
+  "os": [
+    "!win32"
+  ],
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "camelcase": "^5.0.0",
+    "colors": "^1.2.1",
+    "commander": "^2.15.1",
+    "dotenv": "^5.0.1",
+    "execa": "^1.0.0",
+    "hjson": "^3.1.2",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "yeoman-environment": "^2.3.1",
+    "yeoman-generator": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  }
+}
