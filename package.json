@@ -9,7 +9,7 @@
     "mock": "node ./tests/mock-server.js"
   },
   "bin": {
-    "ln": "./bin/index.js"
+    "lnm": "./bin/index.js"
   },
   "keywords": [
     "yeoman-generator",
