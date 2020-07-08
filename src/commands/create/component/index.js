@@ -11,7 +11,7 @@ export default class extends Generator {
       {
         'type': 'input',
         'name': 'projectName',
-        'message': '项目名称（Gitlab项目名称）：',
+        'message': '项目名称：',
         'validate': value => {
           if (!value.match(/^[a-zA-Z\-\d]+?$/)) {
             return '项目名式不正确, 只能包含大小写字母、数字、中划线'
