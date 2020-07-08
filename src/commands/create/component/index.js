@@ -1,7 +1,5 @@
 import fs from 'fs'
 import Generator from 'yeoman-generator'
-import request from 'request-promise'
-import execa from 'execa'
 
 export default class extends Generator {
 
@@ -94,7 +92,9 @@ export default class extends Generator {
       ['index.js', 'src/index.js'],
       [`package-react.json`, 'package.json'], // 根据不同的 React 版本选择 package.json
       ['npmignore', '.npmignore'],
-      ['README.md']
+      ['README.md'],
+      ['example.js', 'examples/default/index.js'], // 默认示例代码
+      ['example-1.js', 'examples/default-1/index.js'] // 默认示例代码
     ]
 
     this._private_copies(copies)
